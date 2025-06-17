@@ -1,0 +1,120 @@
+/* MovieDetailsPage.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.backLink:hover {
+  color: #005ecc;
+}
+
+.movieHeader {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.moviePoster img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.noPoster {
+  width: 250px;
+  height: 375px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.movieInfo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.movieOverview {
+  margin: 20px 0;
+  line-height: 1.5;
+  color: #444;
+}
+
+.userScore {
+  font-weight: bold;
+  color: #0077ff;
+}
+
+.genresList {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.genrePill {
+  background-color: #eee;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Навигация к Cast/Reviews */
+nav {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+nav a {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #005ecc;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .movieHeader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .moviePoster img,
+  .noPoster {
+    width: 200px;
+    height: auto;
+  }
+
+  .movieInfo {
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

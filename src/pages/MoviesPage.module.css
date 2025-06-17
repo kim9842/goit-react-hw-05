@@ -1,0 +1,70 @@
+/* MoviesPage.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ======== Search Form ======== */
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005ecc;
+}
+
+/* ======== Result Message ======== */
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  margin-top: 20px;
+}
+
+/* ======== Adaptive Styles ======== */
+
+@media (max-width: 480px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"],
+  button {
+    width: 100%;
+  }
+}
